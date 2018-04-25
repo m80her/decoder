@@ -1,5 +1,5 @@
 # decoder
-Proof of concept re-creating a Flash app 'magazine' in HTML, CSS, and JavaScript
+Proof of concept re-creating a Flash app 'magazine' in HTML, CSS, and JavaScript.
 
 It's May 2012. I'm working at Redwood Publishing, and Flash is going down the pan.
 
