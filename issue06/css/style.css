@@ -1,0 +1,1613 @@
+/*
+ * HTML5 ✰ Boilerplate
+ *
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ *
+ * Detailed information about this CSS: h5bp.com/css
+ *
+ * ==|== normalize ==========================================================
+ */
+
+
+/* =============================================================================
+   HTML5 display definitions
+   ========================================================================== */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, nav, section { display: block; }
+audio, canvas, video { display: inline-block; *display: inline; *zoom: 1; }
+audio:not([controls]) { display: none; }
+[hidden] { display: none; }
+
+
+/* =============================================================================
+   Base
+   ========================================================================== */
+
+/*
+ * 1. Correct text resizing oddly in IE6/7 when body font-size is set using em units
+ * 3. Prevent iOS text size adjust on device orientation change, without disabling user zoom: h5bp.com/g
+ */
+
+html { font-size: 100%; -webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%; -webkit-font-smoothing: subpixel-antialiased; }
+
+body { margin: 0; font-size: 13px; line-height: 1.231; }
+
+body, button, input, select, textarea { font-family: sans-serif; color: #222; }
+
+
+
+/* =============================================================================
+   Links
+   ========================================================================== */
+
+/*a { color: #00e; }
+a:visited { color: #551a8b; }
+a:hover { color: #06e; }*/
+a:focus { outline: thin dotted; }
+
+/* Improve readability when focused and hovered in all browsers: h5bp.com/h */
+a:hover, a:active { outline: 0; }
+
+
+/* =============================================================================
+   Typography
+   ========================================================================== */
+
+abbr[title] { border-bottom: 1px dotted; }
+
+b, strong { font-weight: bold; }
+
+blockquote { margin: 1em 40px; }
+
+dfn { font-style: italic; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+ins { background: #ff9; color: #000; text-decoration: none; }
+
+mark { background: #ff0; color: #000; font-style: italic; font-weight: bold; }
+
+/* Redeclare monospace font family: h5bp.com/j */
+pre, code, kbd, samp { font-family: monospace, serif; _font-family: 'courier new', monospace; font-size: 1em; }
+
+/* Improve readability of pre-formatted text in all browsers */
+pre { white-space: pre; white-space: pre-wrap; word-wrap: break-word; }
+
+q { quotes: none; }
+q:before, q:after { content: ""; content: none; }
+
+small { font-size: 85%; }
+
+/* Position subscript and superscript content without affecting line-height: h5bp.com/k */
+sub, sup { font-size: 75%; line-height: 0; position: relative; vertical-align: baseline; }
+sup { top: -0.5em; }
+sub { bottom: -0.25em; }
+
+
+/* =============================================================================
+   Lists
+   ========================================================================== */
+
+ul, ol { margin: 1em 0; padding: 0 0 0 40px; }
+dd { margin: 0 0 0 40px; }
+nav ul, nav ol { list-style: none; list-style-image: none; margin: 0; padding: 0; }
+
+
+/* =============================================================================
+   Embedded content
+   ========================================================================== */
+
+/*
+ * 1. Improve image quality when scaled in IE7: h5bp.com/d
+ * 2. Remove the gap between images and borders on image containers: h5bp.com/e
+ */
+
+img { border: 0; -ms-interpolation-mode: bicubic; vertical-align: middle; }
+
+/*
+ * Correct overflow not hidden in IE9
+ */
+
+svg:not(:root) { overflow: hidden; }
+
+
+/* =============================================================================
+   Figures
+   ========================================================================== */
+
+figure { margin: 0; }
+
+
+/* =============================================================================
+   Forms
+   ========================================================================== */
+
+form { margin: 0; }
+fieldset { border: 0; margin: 0; padding: 0; }
+
+/* Indicate that 'label' will shift focus to the associated form element */
+label { cursor: pointer; }
+
+/*
+ * 1. Correct color not inheriting in IE6/7/8/9
+ * 2. Correct alignment displayed oddly in IE6/7
+ */
+
+legend { border: 0; *margin-left: -7px; padding: 0; }
+
+/*
+ * 1. Correct font-size not inheriting in all browsers
+ * 2. Remove margins in FF3/4 S5 Chrome
+ * 3. Define consistent vertical alignment display in all browsers
+ */
+
+button, input, select, textarea { font-size: 100%; margin: 0; vertical-align: baseline; *vertical-align: middle; }
+
+/*
+ * 1. Define line-height as normal to match FF3/4 (set using !important in the UA stylesheet)
+ * 2. Correct inner spacing displayed oddly in IE6/7
+ */
+
+button, input { line-height: normal; *overflow: visible; }
+
+/*
+ * Reintroduce inner spacing in 'table' to avoid overlap and whitespace issues in IE6/7
+ */
+
+table button, table input { *overflow: auto; }
+
+/*
+ * 1. Display hand cursor for clickable form elements
+ * 2. Allow styling of clickable form elements in iOS
+ */
+
+button, input[type="button"], input[type="reset"], input[type="submit"], [role="button"] { cursor: pointer; -webkit-appearance: button; }
+
+/*
+ * Consistent box sizing and appearance
+ */
+
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; -moz-box-sizing: content-box; -webkit-box-sizing: content-box; box-sizing: content-box; }
+input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+
+/*
+ * Remove inner padding and border in FF3/4: h5bp.com/l
+ */
+
+button::-moz-focus-inner { border: 0; padding: 0; }
+
+/*
+ * 1. Remove default vertical scrollbar in IE6/7/8/9
+ * 2. Allow only vertical resizing
+ */
+
+textarea { overflow: auto; vertical-align: top; resize: vertical; }
+
+/* Colors for form validity */
+input:valid, textarea:valid {  }
+input:invalid, textarea:invalid { background-color: #f0dddd; }
+
+
+/* =============================================================================
+   Tables
+   ========================================================================== */
+
+table { border-collapse: collapse; border-spacing: 0; }
+td { vertical-align: top; }
+
+
+/* =============================================================================
+   Fonts
+   ========================================================================== */
+
+@font-face {
+    font-family: 'MyriadProCondensed';
+    src: url('../fonts/myriadpro-cond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'MyriadProBoldCondensed';
+    src: url('../fonts/myriadpro-boldcond-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'UniversUltraCondensedRegular';
+    src: url('../fonts/univers_59_ultra_condensed-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+/* =============================================================================
+   Buttons
+   ========================================================================== */
+
+.btn {
+	display: inline-block;
+	font-family: 'MyriadProCondensed', sans-serif;
+	padding: 5px 10px 2px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.btn:hover {
+	cursor: pointer;
+	text-decoration: underline;
+}
+.btn_large {
+	font-size: 150%;
+}
+.btn_red {
+	background: #ED1C24;
+	color: #fff;
+}
+
+
+
+/* ==|== primary styles =====================================================
+
+	Author: @m80her
+
+	Index:
+	
+	1 - 
+	2 - 
+	3 - 
+	
+   ========================================================================== */
+
+html,
+body,
+header,
+footer {
+	background: #202020 !important;
+}
+#page {
+	height: 620px;
+	margin: 20px auto 0;
+	overflow: hidden;
+	position: relative;
+	width: 960px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+#page.dark {
+	background: -webkit-radial-gradient(center, ellipse cover,  #bbbbbb 30%,#333333 100%); /* Chrome10+,Safari5.1+ */
+}
+#page.light {
+	background: -webkit-linear-gradient(top,  #dadbdc 0%,#fafbfb 55%,#fafbfb 75%,#bfc1c3 100%); /* Chrome10+,Safari5.1+ */
+}
+#content {
+	height: 100%;
+	position: relative;
+}
+footer {
+	background: #000;
+	clear: both;
+	position: relative;
+	width: 100%;
+}
+footer.fixed {
+	position: fixed;
+	bottom: 0;
+}
+footer p {
+	margin: 0;
+}
+
+
+
+/* =============================================================================
+   Nav
+   ========================================================================== */
+header nav {
+	opacity: 0;
+}
+.no-js header nav {
+	opacity: 1;
+}
+
+nav#primaryNav {
+	background: #000;
+	font-family: 'Myriad Pro', sans-serif;
+	margin: 0 auto;
+	min-height: 37px;
+	padding: 0;
+	text-shadow: none;
+	width: 960px;
+}
+nav#primaryNav ul {
+	background: #000;
+	min-height: 57px;
+	padding: 0 10px;
+	width: 960px;
+}
+nav#primaryNav ul:first-child > li {
+	background: #000;
+	display: block;
+	float: left;
+	margin: 0;
+	padding: 0 5px 10px;
+	position: relative;
+}
+nav#primaryNav ul:first-child > li div {
+	background: #000;
+	overflow: hidden;
+	padding: 10px 0 2px;
+	position: relative;
+	z-index: 10;
+	-webkit-font-smoothing: antialiased !important;
+}
+nav#primaryNav ul:first-child > li div:hover {
+	cursor: pointer;
+}
+nav#primaryNav ul:first-child > li.cat_01 div {
+	border-bottom: 3px solid #eb212e;
+}
+nav#primaryNav ul:first-child > li.cat_02 div {
+	border-bottom: 3px solid #063858;
+}
+nav#primaryNav ul:first-child > li.cat_03 div {
+	border-bottom: 3px solid #155863;
+}
+nav#primaryNav ul:first-child > li.cat_04 div {
+	border-bottom: 3px solid #228c8e;
+}
+nav#primaryNav ul:first-child > li.cat_05 div {
+	border-bottom: 3px solid #46ac4e;
+}
+nav#primaryNav ul:first-child > li.cat_06 div {
+	border-bottom: 3px solid #7a5594;
+}
+nav#primaryNav ul:first-child > li div a {
+	color: #fff;
+	display: table-row;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 11px;
+	font-weight: bold;
+	height: 32px;
+	text-decoration: none;
+	text-transform: uppercase;
+	position: relative;
+	z-index: 10;
+}
+nav#primaryNav ul:first-child > li div a span {
+	display: table-cell;
+	line-height: 100%;
+	position: relative;
+	vertical-align: bottom;
+}
+
+nav#primaryNav ul:first-child > li ul {
+	background: #000;
+	display: block;
+	min-height: 165px;
+	margin: 20px 0 0 0;
+	opacity: 0;
+	padding: 0;
+	position: absolute;
+	top: -130px;
+	left: 0;
+	z-index: 1;
+	-webkit-transition: all 400ms ease-in-out 0ms;
+}
+nav#primaryNav ul:first-child > li ul.animated {
+	top: 32px;
+	-webkit-animation-duration: 1s;
+	-webkit-animation-fill-mode: both;
+	opacity: 1;
+}
+@-webkit-keyframes bounceInDown {
+	0% {
+		-webkit-transform: translateY(-2000px);
+	}
+
+	60% {
+		-webkit-transform: translateY(20px);
+	}
+
+	80% {
+		-webkit-transform: translateY(-10px);
+	}
+
+	100% {
+		-webkit-transform: translateY(0);
+	}
+}
+nav#primaryNav ul:first-child > li ul.bounceInDown {
+	-webkit-animation-name: bounceInDown;
+}
+nav#primaryNav ul:first-child > li ul li {
+	background: #000;
+	display: block;
+	float: left;
+	margin: 0 0 0 15px;
+	padding: 0 0 10px 5px;
+	text-transform: uppercase;
+	/*word-wrap: break-word*/
+}
+nav#primaryNav ul:first-child > li ul li:first-child {
+	margin: 0;
+}
+nav#primaryNav ul:first-child > li ul li:hover {
+	cursor: pointer;
+}
+nav#primaryNav ul:first-child > li ul li a {
+	color: #606163;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 125%;
+	font-weight: normal;
+	text-decoration: none;
+}
+nav#primaryNav ul:first-child > li ul li a strong {
+	color: #fff;
+	display: block;
+	font-family: 'UniversUltraCondensedRegular', sans-serif;
+	font-size: 300%;
+	font-weight: normal;
+	-webkit-transition: color 200ms ease;
+}
+nav#primaryNav ul:first-child > li.cat_01 a:hover strong {
+	color: #eb212e;
+}
+nav#primaryNav ul:first-child > li.cat_02 a:hover strong {
+	color: #063858;
+}
+nav#primaryNav ul:first-child > li.cat_03 a:hover strong {
+	color: #155863;
+}
+nav#primaryNav ul:first-child > li.cat_04 a:hover strong {
+	color: #228c8e;
+}
+nav#primaryNav ul:first-child > li.cat_05 a:hover strong {
+	color: #46ac4e;
+}
+nav#primaryNav ul:first-child > li.cat_06 a:hover strong {
+	color: #7a5594;
+}
+
+
+
+
+/* =============================================================================
+   Cover (01)
+   ========================================================================== */
+.cover {
+	background: url(../img/cover_bg.png) 0 0 no-repeat;
+}
+/* phone */
+.cover .phone {
+	height: 552px;
+	opacity: 0;
+	position: absolute;
+	top: 630px;
+	left: 337px;
+	width: 286px;
+	z-index: 2;
+}
+.cover.animate .phone {
+	opacity: 1;
+	top: 25px;
+	-webkit-transition: all 1200ms ease-in-out 400ms;
+}
+.cover .phone .case {
+	background: url(../img/cover_phone.png) 0 0 no-repeat;
+	height: 100%;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 2;
+}
+.cover .phone .screen {
+	background: #000;
+	color: #fff;
+	height: 337px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 107px;
+	left: 30px;
+	width: 224px;
+	z-index: 1;
+}
+.cover.animate .phone .screen {
+	opacity: 1;
+	-webkit-transition: all 1200ms ease-in-out 400ms;
+}
+.cover .phone .screen div {
+	background: #000;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.cover .phone .screen div.animate {
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out 1200ms;
+}
+@-webkit-keyframes rotate {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+.cover .phone .screen div.animate:last-of-type {
+	-webkit-animation: rotate 1200ms linear 3 2s;
+}
+/* ribbon */
+.cover .ribbon div {
+	overflow: hidden;
+	position: absolute;
+}
+.cover .ribbonBack {
+	background: #490100;
+	height: 95px;
+	position: absolute;
+	z-index: 1;
+}
+.cover .ribbon .ribbonBack1 {
+	top: 80px;
+	left: 0;
+	width: 0;
+}
+.cover .ribbon .ribbonBack1.animate {
+	width: 719px;
+}
+.cover .ribbon .ribbonBack2 {
+	top: 189px;
+	left: 241px;
+	width: 0;
+}
+.cover .ribbon .ribbonBack2.animate {
+	width: 589px;
+}
+.cover .ribbon .ribbonBack3 {
+	top: 346px;
+	left: 130px;
+	width: 0;
+}
+.cover .ribbon .ribbonBack3.animate {
+	width: 589px;
+}
+.cover .ribbon .ribbonBack4 {
+	top: 453px;
+	left: 241px;
+	width: 0;
+}
+.cover .ribbon .ribbonBack4.animate {
+	width: 100%;
+}
+.cover .ribbonFront {
+	z-index: 3;
+}
+.cover .ribbon .ribbonFront1 {
+	height: 201px;
+	top: 80px;
+	right: 241px;
+	width: 0;
+}
+.cover .ribbon .ribbonFront1.animate {
+	width: 478px;
+}
+.cover .ribbon .ribbonFront2 {
+	height: 251px;
+	top: 189px;
+	right: 130px;
+	width: 0;
+}
+.cover .ribbon .ribbonFront2.animate {
+	width: 700px;
+}
+.cover .ribbon .ribbonFront3 {
+	height: 201px;
+	top: 346px;
+	right: 241px;
+	width: 0;
+}
+.cover .ribbon .ribbonFront3.animate {
+	width: 478px;
+}
+.cover .ribbon .animate {
+	-webkit-transition: all 400ms ease-in-out 6400ms;
+}
+.cover .ribbon div img {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+.cover .ribbon div img.copy2 {
+	opacity: 0;
+}
+.cover.animate .ribbon div img.copy1 {
+	opacity: 0;
+	-webkit-transition: all 400ms ease-in-out 10000ms;
+}
+.cover.animate .ribbon div img.copy2 {
+	opacity: 1;
+	-webkit-transition: all 400ms ease-in-out 10600ms;
+}
+.cover h1 {
+	position: absolute;
+	top: -21px;
+	left: 0;
+	text-indent: -9999px;
+	width: 0;
+	z-index: 2;
+}
+.cover h1 span:first-of-type {
+	background: url(../img/hdr_decode.png) 0 0 no-repeat;
+	display: block;
+	height: 161px;
+	opacity: 0.2;
+}
+.cover.animate h1 {
+	width: 625px;
+	-webkit-transition: all 1200ms linear 14s;
+}
+.cover h1 span + span {
+	background: url(../img/hdr_r.png) 0 0 no-repeat;
+	height: 161px;
+	position: absolute;
+	top: -161px;
+	left: 525px;
+	text-indent: -9999px;
+	width: 95px;
+	z-index: 2;
+}
+.cover.animate h1 span {
+	top: -21px;
+	-webkit-transition: all 800ms ease-in-out 15s;
+}
+/* date */
+.cover .date {
+	color: #fff;
+	font-family: 'MyriadProCondensed', sans-serif;
+	font-size: 175%;
+	letter-spacing: 4px;
+	margin: 0;
+	position: absolute;
+	top: 10px;
+	right: -250px;
+}
+.cover.animate .date {
+	right: 125px;
+	-webkit-transition: all 400ms ease-in-out 16s;
+}
+.cover .logo_DL {
+	background: url(../img/logo_digital_lab_lg.png) 0 0 no-repeat;
+	height: 41px;
+	opacity: 0;
+	position: absolute;
+	bottom: 14px;
+	right: 21px;
+	text-indent: -9999px;
+	width: 177px;
+}
+.cover.animate .logo_DL {
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out 17s;
+}
+.cover .enter {
+	position: absolute;
+	bottom: -200px;
+	left: 405px;
+	z-index: 3;
+}
+.cover.animate .enter {
+	bottom: 88px;
+	-webkit-transition: all 400ms ease-in-out 17400ms;
+}
+.cover .enter a {
+	background: url(../img/btn_enter.png) 0 0 no-repeat;
+	display: block;
+	height: 65px;
+	text-indent: -9999px;
+	width: 150px;
+}
+
+
+
+
+
+/* =============================================================================
+   Intro Page (02)
+   ========================================================================== */
+.intro .introWrapper {
+	margin: 0 auto;
+	overflow: visible !important;
+	position: relative;
+	top: 100px;
+	width: 590px;
+}
+.intro .introWrapper .mugshot {
+	color: #fff;
+	font-family: 'MyriadProCondensed', sans-serif;
+	font-size: 100%;
+	letter-spacing: 3px;
+	position: absolute;
+	top: 60px;
+	right: 610px;
+	text-align: right;
+	text-transform: uppercase;
+	width: 150px;
+}
+.intro .introWrapper .mugshot img {
+	position: absolute;
+	top: -95px;
+	right: -30px;
+}
+.intro .introWrapper .mugshot p {
+	margin: 0 0 5px;
+}
+.intro .introWrapper h1 {
+	color: #fff;
+	font-family: 'MyriadProCondensed', sans-serif;
+	font-size: 180%;
+	font-weight: normal;
+	letter-spacing: 7px;
+	margin: 0 0 15px 20px;
+	padding: 0;
+	text-transform: uppercase;
+}
+.intro #wrapper {
+	color: #fff;
+	height: 310px;
+	margin: 0 0 20px;
+	overflow: auto;
+	padding: 0 30px 0 0;
+	position: relative;
+	width: 560px;
+}
+.intro #scroller {
+	padding-bottom: 60px;
+}
+.intro #wrapper p {
+	font-size: 115%;
+	margin-top: 0;
+	text-indent: 1em;
+}
+.intro #wrapper .scrollbarV {
+	background: #fff;
+	overflow: visible !important;
+	position: absolute;
+	top: 2px;
+	bottom: 7px;
+	right: 4px;
+	width: 3px;
+	z-index: 100;
+}
+.intro #wrapper .scrollbarV > div {
+	background: #ED1C24;
+	position: absolute;
+	left: -4px;
+	width: 12px;
+	z-index: 100;
+}
+.intro .introWrapper .btn {
+	margin-right: 30px;
+}
+.intro .logoDL {
+	position: absolute;
+	bottom: 20px;
+	right: 20px;
+}
+
+
+
+
+
+/* =============================================================================
+   Contents Page (03)
+   ========================================================================== */
+.contents header nav {
+	opacity: 1;
+}
+.contents nav#primaryNav {
+	background: none;
+	position: absolute;
+	top: 200px;
+} 
+.contents nav#primaryNav ul {
+	background: none;
+}
+.contents nav#primaryNav ul:first-child > li {
+	background: none;
+	opacity: 0;
+	left: 1000px;
+	-webkit-transition: all 800ms ease-in-out 0ms;
+}
+.contents nav#primaryNav ul:first-child > li.animate {
+	opacity: 1;
+	left: 0;
+}
+.contents nav#primaryNav ul:first-child > li div {
+	background: none;
+}
+.contents nav#primaryNav ul:first-child > li div a {
+	color: #fff;
+}
+.contents nav#primaryNav ul:first-child > li ul {
+	background: none;
+	display: block;
+	min-height: 145px;
+	opacity: 0;
+	overflow: hidden;
+	top: -145px;
+}
+.contents nav#primaryNav ul:first-child > li ul.block {
+	display: none;
+}
+.contents nav#primaryNav ul:first-child > li.animate ul {
+	display: block;
+	opacity: 1;
+	top: 32px;
+}
+.contents nav#primaryNav ul:first-child > li ul li {
+	background: none;
+	position: relative;
+	top: -200px;
+	-webkit-transition: all 400ms ease-in-out 0ms;
+}
+.contents nav#primaryNav ul:first-child > li ul li.animate {
+	top: 0;
+}
+.contents nav#primaryNav ul:first-child > li ul li a {
+	color: #333;
+	display: block;
+	font-size: 140%;
+	letter-spacing: -1px;
+	line-height: 100%;
+	-webkit-transition: color 250ms ease;
+}
+.contents nav#primaryNav ul:first-child > li ul li a:hover {
+	color: #fff;
+}
+.contents nav#primaryNav ul:first-child > li ul li a strong {
+	color: #fff;
+	font-size: 310%;
+	line-height: 125%;
+}
+.contents nav#primaryNav ul:first-child > li a:hover strong {
+	color: #fff;
+}
+
+
+
+
+
+/* =============================================================================
+   Apps (10)
+   ========================================================================== */
+.apps .container {
+	height: 350px;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+	top: 100px;
+	width: 700px;
+}
+.apps .container .iPhone {
+	background: url(../img/iPhone_side.png) center 0 no-repeat;
+	height: 53px;
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	z-index: 10;
+}
+.apps .container .copy {
+	/*display: none;*/
+	position: absolute;
+	top: 350px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.apps .container .copy.animateIn {
+	top: 0;
+	-webkit-transition: all 1200ms ease-out 1200ms;
+}
+.apps .container .copy.animateOut {
+	top: -300px;
+	-webkit-transition: all 800ms ease-out 0ms;
+}
+.apps .container .copy h1 {
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 500%;
+	font-weight: normal;
+	line-height: 100%;
+	margin: 20px 0 0;
+	padding: 0;
+}
+.apps .container .copy p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 120%;
+	margin: 0 70px 5px;
+	padding: 0;
+}
+.apps .appIcons {
+	position: absolute;
+	top: 0;
+}
+.apps .appIcons ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.apps .appIcons ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 300px;
+	left: 280px;
+	-webkit-transform:scale(0.1);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 400ms ease-out;
+}
+.apps .appIcons ul li.animate {
+	-webkit-transform:scale(1);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition-delay: 800ms;
+}
+.apps .appIcons ul li.app_01.animate {
+	top: 50px;
+	left: 0;
+	-webkit-transform:rotate(-10deg);
+	-webkit-transform-style: preserve-3d;
+}
+.apps .appIcons ul li.app_02.animate {
+	top: 25px;
+	left: 180px;
+	-webkit-transform:rotate(-5deg);
+	-webkit-transform-style: preserve-3d;
+}
+.apps .appIcons ul li.app_03.animate {
+	top: 25px;
+	left: 380px;
+	-webkit-transform:rotate(5deg);
+	-webkit-transform-style: preserve-3d;
+}
+.apps .appIcons ul li.app_04.animate {
+	top: 50px;
+	left: 560px;
+	-webkit-transform:rotate(10deg);
+	-webkit-transform-style: preserve-3d;
+}
+.apps .appIcons ul li a {
+	display: block;
+	height: 140px;
+	position: relative;
+	text-decoration: none;
+	width: 140px;
+	-webkit-transition: all 200ms ease-out 0ms;
+}
+.apps .appIcons ul li.app_01 a {
+	background: url(../img/appIcon_01.png) center 0 no-repeat;
+}
+.apps .appIcons ul li.app_02 a {
+	background: url(../img/appIcon_02.png) center 0 no-repeat;
+}
+.apps .appIcons ul li.app_03 a {
+	background: url(../img/appIcon_03.png) center 0 no-repeat;
+}
+.apps .appIcons ul li.app_04 a {
+	background: url(../img/appIcon_04.png) center 0 no-repeat;
+}
+.apps .appIcons ul li.animate a:hover {
+	top: -5px;
+	-webkit-transition: all 200ms ease-out 0ms;
+}
+.apps .appIcons ul li a span {
+	color: #333;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 175%;
+	position: absolute;
+	bottom: 0;
+	text-align: center;
+	width: 100%;
+}
+.apps .appInfo {
+	background: #000;
+	height: 272px;
+	opacity: 0;
+	position: absolute;
+	top: 300px;
+	left: 40px;
+	width: 620px;
+	-webkit-transition: all 400ms ease-out;
+}
+.apps .appInfo.animate {
+	opacity: 1;
+	top: 25px;
+	-webkit-transition-delay: 800ms;
+}
+.apps .appInfo .close {
+	background: #666;
+	border: 1px solid #fff;
+	color: #fff;
+	display: block;
+	font-size:16px;
+	height: 20px;
+	line-height: 18px;
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	text-align: center;
+	text-decoration: none;
+	width: 20px;
+}
+.apps .appInfo div {
+	color: #fff;
+	display: none;
+}
+.apps .appInfo div h2 {
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 30px;
+	font-weight: normal;
+	margin: 20px 0;
+	text-transform: uppercase;
+}
+.apps .appInfo div img {
+	margin: 0 20px;
+}
+.apps .appInfo div p {
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 115%;
+	margin-right: 20px;
+}
+
+
+
+
+
+/* =============================================================================
+   BBDO WINS (12)
+   ========================================================================== */
+.awards {
+	background: url(../img/awards_bg.png) 0 0 no-repeat;
+}
+.awards h1 {
+	color: #fff;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 60px;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	top: 200px;
+	text-align: center;
+	text-transform: uppercase;
+	width: 100%;
+	-webkit-transform:scale(0);
+	-webkit-transform-style: preserve-3d;
+}
+.awards h1.animate {
+	-webkit-transform:scale(1);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 800ms ease-out 800ms;
+}
+.awards h1 span {
+	position: absolute;
+	top: 0;
+	width: auto;
+}
+.awards h1 span:nth-child(1) {
+	left: 195px;
+}
+.awards h1 span:nth-child(2) {
+	left: 325px;
+}
+.awards h1 span:nth-child(3) {
+	left: 555px;
+}
+.awards h1.animate span:nth-child(1) {
+	font-size: 75%;
+	top: 134px;
+	left: 25px;
+	-webkit-transition: all 400ms ease-in-out 2400ms;
+}
+.awards h1.animate span:nth-child(2) {
+	font-size: 75%;
+	top: 172px;
+	left: 25px;
+	-webkit-transition: all 400ms ease-in-out 2800ms;
+}
+.awards h1.animate span:nth-child(3) {
+	font-size: 75%;
+	top: 210px;
+	left: 25px;
+	-webkit-transition: all 400ms ease-in-out 3200ms;
+}
+.awards .headerCopy {
+	color: #fff;
+	font-family: 'Myriad Pro', sans-serif;
+	position: absolute;
+	top: 550px;
+	left: 27px;
+	text-transform: uppercase;
+}
+.awards .headerCopy.animate {
+	top: 450px;
+	-webkit-transition: all 400ms ease-in-out 4800ms;
+}
+.awards .headerCopy span {
+	color: #000;
+	display: block;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+}
+.awards .map {
+	background: url(../img/awards_map.png) center center no-repeat;
+	height: 450px;
+	margin: 20px auto 0;
+	width: 920px;
+	z-index: 10;
+	-webkit-transform:scale(0);
+	-webkit-transform-style: preserve-3d;
+}
+.awards .map.animate {
+	-webkit-transform:scale(1);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 600ms ease-out 4000ms;
+}
+.awards .map ul,
+.awards .map ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.awards .map ul:first-child > li {
+	position: absolute;
+}
+.awards .map ul:first-child > li#bbdo_san_francisco {
+	top: 180px;
+	left: 115px;
+}
+.awards .map ul:first-child > li#bbdo_toronto {
+	top: 150px;
+	left: 213px;
+}
+.awards .map ul:first-child > li#proximity_canada {
+	top: 155px;
+	left: 227px;
+}
+.awards .map ul:first-child > li#bbdo_new_york_1 {
+	top: 170px;
+	left: 230px;
+}
+.awards .map ul:first-child > li#bbdo_new_york_2 {
+	top: 170px;
+	left: 245px;
+}
+.awards .map ul:first-child > li#bbdo_puerto_rico {
+	top: 237px;
+	left: 255px;
+}
+.awards .map ul:first-child > li#proximity {
+	top: 265px;
+	left: 230px;
+}
+.awards .map ul:first-child > li#amv_bbdo {
+	top: 135px;
+	left: 425px;
+}
+.awards .map ul:first-child > li#bbdo_spain {
+	top: 180px;
+	left: 410px;
+}
+.awards .map ul:first-child > li#dlv_bbdo {
+	top: 170px;
+	left: 465px;
+}
+.awards .map ul:first-child > li#bbdo_south_africa {
+	top: 370px;
+	left: 490px;
+}
+.awards .map ul:first-child > li#the_impact_bbdo {
+	top: 220px;
+	left: 560px;
+}
+.awards .map ul:first-child > li#bbdo_singapore {
+	top: 280px;
+	left: 690px;
+}
+.awards .map ul:first-child > li#proximity_china {
+	top: 225px;
+	left: 720px;
+}
+.awards .map ul:first-child > li#isbbdo_tokyo {
+	top: 190px;
+	left: 780px;
+}
+.awards .map ul:first-child > li#clemengerbbdo_melbourne_1 {
+	top: 387px;
+	left: 785px;
+}
+.awards .map ul:first-child > li#clemengerbbdo_melbourne_2 {
+	top: 387px;
+	left: 800px;
+}
+.awards .map ul:first-child > li#clemengerbbdo_sydney_1 {
+	top: 377px;
+	left: 811px;
+}
+.awards .map ul:first-child > li#clemengerbbdo_sydney_2 {
+	top: 367px;
+	left: 800px;
+}
+.awards .map ul:first-child > li#colenso_bbdo_aim_proximity_nz {
+	top: 396px;
+	left: 870px;
+}
+.awards .map ul li a.pin {
+	display: block;
+	height: 15px;
+	opacity: 0;
+	width: 15px;
+}
+.awards .map ul li a.pin span {
+	display: block;
+	height: 100%;
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	-webkit-transition: all 400ms ease;
+}
+.awards .map ul li.animate a.network {
+	opacity: 1;
+	-webkit-transition: all 400ms ease-in 5800ms;
+}
+.awards .map ul li a.network {
+	background: url(../img/win_network.png) 4px 4px no-repeat;
+}
+.awards .map ul li a.network .pulse {
+	background: url(../img/win_network_pulse_alt.png) center center no-repeat;
+}
+.awards .map ul li.animate a.award {
+	opacity: 1;
+	-webkit-transition: all 400ms ease-in 6200ms;
+}
+.awards .map ul li a.award {
+	background: url(../img/win_award.png) center center no-repeat;
+}
+.awards .map ul li a.award .pulse {
+	background: url(../img/win_award_pulse_alt.png) center center no-repeat;
+}
+@-webkit-keyframes winPulse {
+	0%   { opacity: 0; }
+	40%  { opacity: 0.5; }
+	100% { opacity: 0; }
+}
+.awards .map ul li a.network .pulse {
+	-webkit-animation: winPulse 3s ease 1s infinite normal;
+}
+.awards .map ul li a.award .pulse {
+	-webkit-animation: winPulse 3s ease 1s infinite alternate;
+}
+.awards .map ul li a.pin .hover {
+	opacity: 0;
+	-webkit-transition: all 400ms ease;
+}
+.awards .map ul li a.network .hover {
+	background: url(../img/win_network_pulse_alt.png) center center no-repeat;
+}
+.awards .map ul li a.award .hover {
+	background: url(../img/win_award_pulse_alt.png) center center no-repeat;
+}
+.awards .map ul li a.pin:hover .hover {
+	opacity: 1;
+	-webkit-transition: all 400ms ease;
+}
+.awards .map .popup {
+	box-shadow: 3px 3px 10px #333;
+	opacity: 0;
+	position: absolute;
+	width: 660px;
+	z-index: 10;
+	-webkit-transform:scale(0);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 400ms ease;
+}
+.awards .map .popup.open {
+	opacity: 1;
+	-webkit-transform:scale(1);
+	-webkit-transform-style: preserve-3d;
+	-webkit-transition: all 400ms ease;
+}
+.awards .map .top .popup {
+	top: 30px;
+}
+.awards .map .topLeft .popup {
+	left: -40px;
+	-webkit-transform-origin: 47px -13px;
+}
+.awards .map .topMidLeft .popup {
+	left: -240px;
+	-webkit-transform-origin: 247px -13px;
+}
+.awards .map .topMidRight .popup {
+	left: -340px;
+	-webkit-transform-origin: 347px -13px;
+}
+.awards .map .topMidRight .popup {
+	left: -340px;
+	-webkit-transform-origin: 347px -13px;
+}
+.awards .map .topRight .popup {
+	left: -540px;
+	-webkit-transform-origin: 547px -13px;
+}
+.awards .map .btm .popup {
+	top: -235px;
+}
+.awards .map .btmMid .popup {
+	left: -330px;
+	-webkit-transform-origin: 338px 235px;
+}
+.awards .map .btmMidRight .popup {
+	left: -480px;
+	-webkit-transform-origin: 488px 235px;
+}
+.awards .map .btmRight .popup {
+	left: -560px;
+	-webkit-transform-origin: 568px 235px;
+}
+.awards .map .btmFarRight .popup {
+	left: -610px;
+	-webkit-transform-origin: 618px 235px;
+}
+.awards .map .popup .inner {
+	background-image: url(../img/popup_pointer.png);
+	background-repeat: no-repeat;
+	width: 100%;
+}
+.awards .map .top .popup .inner {
+	margin-top: -15px;
+	padding-top: 15px;
+}
+.awards .map .btm .popup .inner {
+	margin-bottom: -15px;
+	padding-bottom: 15px;
+}
+.awards .map .topLeft .popup .inner {
+	background-position: 32px 0;
+}
+.awards .map .topMidLeft .popup .inner {
+	background-position: 232px 0;
+}
+.awards .map .topMidRight .popup .inner {
+	background-position: 332px 0;
+}
+.awards .map .topRight .popup .inner {
+	background-position: 532px 0;
+}
+.awards .map .btmMid .popup .inner {
+	background-position: 322px 204px;
+}
+.awards .map .btmMidRight .popup .inner {
+	background-position: 472px 204px;
+}
+.awards .map .btmRight .popup .inner {
+	background-position: 552px 204px;
+}
+.awards .map .btmFarRight .popup .inner {
+	background-position: 602px 204px;
+}
+.awards .map .popup .close {
+	border: 1px solid #333;
+	color: #666;
+	display: block;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 16px;
+	height: 18px;
+	line-height: 16px;
+	position: absolute;
+	top: 20px;
+	right: 15px;
+	text-align: center;
+	text-decoration: none;
+	width: 18px;
+	z-index: 15;
+}
+.awards .map .popup .close:hover {
+	opacity: 0.7;
+}
+.awards .map .popup ul {
+	box-shadow: 3px 3px 10px #333;
+	position: absolute;
+}
+.awards .map .top .popup ul {
+	bottom: -20px;
+	right: 0;
+}
+.awards .map .btm .popup ul {
+	top: -20px;
+	left: 0;
+}
+.awards .map .popup ul li {
+	background: #fff;
+	float: left;
+}
+.awards .map .top .popup ul li {
+	margin-left: 2px;
+}
+.awards .map .btm .popup ul li {
+	margin-right: 2px;
+}
+.awards .map .popup ul li a {
+	color: #000;
+	display: block;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	padding: 2px 7px;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+.awards .map .popup ul li a:hover,
+.awards .map .popup ul li a.active {
+	color: #eb212e;
+}
+.awards .map .popup .info {
+	background: #fff;
+	height: 180px;
+	padding: 20px 15px;
+	position: relative;
+}
+.awards .map .popup .info > div {
+	/*display: none;*/
+	opacity: 0;
+	position: absolute;
+}
+.awards .map .popup .info div.active {
+	/*display: block;*/
+	opacity: 1;
+	-webkit-transition: all 200ms ease-in-out;
+}
+.awards .map .popup .info div .img {
+	border: 1px solid #999;
+	float: left;
+	height: 178px;
+	margin: 0 20px 0 0;
+	width: 268px;
+}
+.awards .map .popup .info div h2 {
+	float: left;
+	font-family: 'MyriadProBoldCondensed', sans-serif;
+	font-size: 175%;
+	font-weight: normal;
+	margin: 0;
+	padding: 0;
+	text-transform: uppercase;
+}
+.awards .map .popup .info div p {
+	float: left;
+	font-family: 'Myriad Pro', sans-serif;
+	font-size: 100%;
+	line-height: 125%;
+	margin: 0;
+	padding: 0;
+	width: 50%;
+}
+.awards .map .popup .info div p strong {
+	color: #ff0101;
+	font-size: 110%;
+	text-transform: uppercase;
+}
+.awards .mapKey {
+	color: #fff;
+	font-size: 75%;
+	letter-spacing: 1px;
+	margin: 0;
+	position: absolute;
+	top: 550px;
+	right: 25px;
+	text-align: right;
+	text-transform: uppercase;
+	z-index: 1;
+}
+.awards .mapKey.animate {
+	top: 460px;
+	-webkit-transition: all 400ms ease-in-out 5400ms;
+}
+.awards .mapKey p {
+	line-height: 20px;
+	padding: 0 25px 0 0;
+}
+.awards .mapKey p:nth-child(1) {
+	background: url(../img/wins_network_key.png) right center no-repeat;
+}
+.awards .mapKey p:nth-child(2) {
+	background: url(../img/wins_awards_key.png) right center no-repeat;
+}
+
+
+
+
+
+/*
+ * Media queries for responsive design github.com/h5bp/mobile-boilerplate/wiki/The-Style
+ */
+
+
+/* Styles for desktop and large screen ----------- */
+
+/*styles for 800px and up!*/
+@media only screen and (min-width: 800px) {
+  /* Styles */
+}/*/mediaquery*/
+
+
+/* iPhone 4, Opera Mobile 11 and other high pixel ratio devices ----------- */
+@media
+only screen and (-webkit-min-device-pixel-ratio: 1.5),
+only screen and (-o-min-device-pixel-ratio: 3/2),
+only screen and (min--moz-device-pixel-ratio: 1.5),
+only screen and (min-device-pixel-ratio: 1.5) {
+  /* Styles */
+}
+
+
+
+/* ==|== non-semantic helper classes ========================================
+   Please define your styles before this section.
+   ========================================================================== */
+
+/* prevent callout */
+.nocallout {-webkit-touch-callout: none;}
+
+/* A hack for HTML5 contenteditable attribute on mobile */
+textarea[contenteditable] {-webkit-appearance: none;}
+
+/* A workaround for S60 3.x and 5.0 devices which do not animated gif images if they have been set as display: none */
+.gifhidden {position: absolute; left: -100%;}
+
+/* For image replacement */
+.ir { display: block; border: 0; text-indent: -999em; overflow: hidden; background-color: transparent; background-repeat: no-repeat; text-align: left; direction: ltr; }
+.ir br { display: none; }
+
+/* Hide from both screenreaders and browsers: h5bp.com/u */
+.hidden { display: none !important; visibility: hidden; }
+
+/* Hide only visually, but have it available for screenreaders: h5bp.com/v */
+.visuallyhidden { border: 0; clip: rect(0 0 0 0); height: 1px; margin: -1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element to be focusable when navigated to via the keyboard: h5bp.com/p */
+.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus { clip: auto; height: auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+/* Hide visually and from screenreaders, but maintain layout */
+.invisible { visibility: hidden; }
+
+/* Contain floats: h5bp.com/q */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
+.floatLeft { float: left; }
+.floatRight { float: right; }
+
+
+
+/* ==|== print styles =======================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+
+@media print {
+  * { background: transparent !important; color: black !important; text-shadow: none !important; filter:none !important; -ms-filter: none !important; } /* Black prints faster: h5bp.com/s */
+  a, a:visited { text-decoration: underline; }
+  a[href]:after { content: " (" attr(href) ")"; }
+  abbr[title]:after { content: " (" attr(title) ")"; }
+  .ir a:after, a[href^="javascript:"]:after, a[href^="#"]:after { content: ""; }  /* Don't show links for images, or javascript/internal links */
+  pre, blockquote { border: 1px solid #999; page-break-inside: avoid; }
+  thead { display: table-header-group; } /* h5bp.com/t */
+  tr, img { page-break-inside: avoid; }
+  img { max-width: 100% !important; }
+  @page { margin: 0.5cm; }
+  p, h2, h3 { orphans: 3; widows: 3; }
+  h2, h3 { page-break-after: avoid; }
+}
